@@ -4,7 +4,8 @@
     "description": "MiaKelley-Lanser",
     "main": "index.js",
     "scripts": {
-      "script": "node script.js"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
     },
     "engines": {
       "node": ">=7.6.0",
@@ -12,10 +13,8 @@
     },
     "author": "Mia Kelley-Lanser",
     "dependencies": {
-      "body-parser": "^1.17.1",
       "express": "^4.15.2",
       "express-validator": "^3.1.2",
-      "mongoose": "^4.8.7",
       "nodemon": "^1.14.12"
     },
     "devDependencies": {},

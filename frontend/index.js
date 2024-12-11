@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/about.html'));
+  res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 app.listen(port, () => {
