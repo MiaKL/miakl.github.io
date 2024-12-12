@@ -168,6 +168,13 @@ nav ul li a:hover {
     color: black;
 }
 
+nav ul li.dropdown span {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 nav ul li.dropdown:hover span {
     color: #109168;
 }
@@ -214,6 +221,28 @@ nav ul li.dropdown:hover .dropdown-content {
 
     nav ul li.dropdown.active .dropdown-content {
         display: block;
+    }
+
+    nav ul li.dropdown span {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .project-container {
+        display: none;
+    }
+
+    .project .project-alt {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .project-list {
+        display:block;
     }
 }
 
