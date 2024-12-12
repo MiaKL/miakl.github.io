@@ -30,6 +30,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-size: 100% 100%;
 }
 
 nav ul {
@@ -49,6 +52,27 @@ nav ul li {
     font-size: 30px;
     font-weight: bold;
     background: linear-gradient(to right, #4352fa, #6a8ef5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar-logo {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: #4352fa;
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #4352fa, #6a8ef5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar-logo:hover {
+    background: linear-gradient(to right, #109168, #17bdfa);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -90,7 +114,7 @@ nav ul li a:hover {
 
 #about h1 {
     text-align: center;
-    color: #2eb176;
+    color: #109168;
     font-size: 2.5rem;
     margin-bottom: 25px;
 }
@@ -150,6 +174,47 @@ nav ul li.dropdown:hover span {
 
 nav ul li.dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    nav ul li.dropdown .dropdown-content {
+        position: static;
+        width: 25%;
+        display: none;
+        padding: 5px 0;
+        max-height: 300px;
+        overflow-y: auto;
+        margin: 0 auto;
+    }
+
+    nav ul li.dropdown.active .dropdown-content {
+        display: block;
+    }
 }
 
 nav ul li.dropdown a:hover {
