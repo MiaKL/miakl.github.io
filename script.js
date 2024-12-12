@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
             body: formData,
         })
         .then(response => {
+            console.log('Response status:', response.status);
+            console.log('Response body:', response);
+
             if (response.ok) {
                 alert('Your message has been sent successfully! Mia will get back to you soon!');
                 form.reset();
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
         .catch(error => {
+            console.error('Error:', error);
             alert('Error: Could not send the message. Please try again.');
         });
     });
