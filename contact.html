@@ -29,15 +29,15 @@
     <main>
         <section id="contact">
             <h1 class="gradient">Contact Me</h1>
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/mkgnakld" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Send</button>
             </form>
@@ -48,7 +48,6 @@
         <p>GitHub: <a href="https://github.com/MiaKL" target="_blank">github.com/MiaKL</a></p>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
